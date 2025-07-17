@@ -1,0 +1,7 @@
+browseui.view:
+  path: '/browseui'
+  defaults:
+    _controller: '\Drupal\browseui\Controller\BrowseUIController::viewPage'
+    _title: 'Browse UI Interface Viewer'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,5 @@
+name: 'S3 Browse UI'
+type: module
+description: 'Renders S3 browse UI importing from NPM registry.'
+core_version_requirement: ^10 || ^11
+package: Custom

@@ -1,0 +1,7 @@
+main:
+  version: 1.x
+  js:
+    js/dist/browseui.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

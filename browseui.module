@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Primary module file for the BrowseUI module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function browseui_preprocess_page(&$variables) {
+  // Get the current route name.
+  $route_name = \Drupal::routeMatch()->getRouteName();
+
+  // Add a custom class to the body tag ONLY on our browser page.
+  if ($route_name == 'browseui.view') {
+    $variables['attributes']['class'][] = 'full-width-page';
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "sanjog-browseui-test": "^0.1.3"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
+  },
+  "devDependencies": {
+    "webpack-cli": "^6.0.1"
+  }
+}
